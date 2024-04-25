@@ -254,3 +254,121 @@ nav .burger:hover {
     z-index: 500;
   }
 }
+
+header {
+  width: 100%;
+  background: var(--bleu1);
+  min-height: 50vh;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  position: relative;
+  place-items: center;
+
+  clip-path: polygon(0 0, 100% 0, 100% 96%, 0% 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 96%, 0% 100%);
+}
+
+header .header-left {
+  position: relative;
+  width: 100%;
+  z-index: 1;
+  padding: 12rem clamp(20px, 8vw, 100px);
+}
+
+header .header-left .header-left-illustration {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 550px;
+  min-width: 310px;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+header .header-left hr {
+  display: block;
+  border: none;
+  margin: 1rem 0;
+  width: 100px;
+  height: 2px;
+  background: var(--beige);
+}
+
+header .header-left .header-left-illustration img {
+  user-select: none;
+  width: 100%;
+  height: 100%;
+}
+
+header .header-right {
+  position: relative;
+  width: 100%;
+}
+
+header .header-right img:nth-child(1),
+header .header-right img:nth-child(2) {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+header .header-right img:nth-child(1) {
+  width: 500px;
+}
+header .header-right img:nth-child(2) {
+  width: 400px;
+}
+
+header .header-buttons {
+  width: 100%;
+  display: flex;
+  margin: 2rem 0;
+}
+
+header .header-buttons a {
+  display: inline-block;
+  width: 200px;
+  height: 40px;
+  padding: 0.1rem;
+  font-size: 13px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background: var(--bleu1);
+  box-shadow: -3px -3px 7px #383d55, 3px 3px 5px #11131d;
+}
+
+header .header-buttons a:nth-child(1) {
+  margin-right: 2rem;
+}
+
+header .header-buttons a:hover {
+  box-shadow: inset -3px -3px 7px #383d55, inset 3px 3px 5px #11131d;
+}
+
+@media screen and (max-width: 780px) {
+  header {
+    display: block;
+    height: 50vh;
+    padding: 0.8rem;
+    text-align: center;
+    padding-top: 80px;
+  }
+  header .header-right {
+    display: none;
+  }
+  header .header-left {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  header .header-buttons {
+    justify-content: center;
+  }
+}
