@@ -6,7 +6,7 @@
 
 <p align="center"><img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&amp;logo=html5&amp;logoColor=white" alt="shields"><img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&amp;logo=css3&amp;logoColor=white" alt="shields"><img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&amp;logo=JavaScript&amp;logoColor=white" alt="shields"></p>
 
-<h2>Project Screenshots:</h2>
+<h2>Screen du projet:</h2>
 
 <img src="https://media.discordapp.net/attachments/1143258595719389205/1233040571325616188/image.png?ex=662ba604&amp;is=662a5484&amp;hm=92b9b1543dd204094895be09b6491a4d32f82b4372b6b1b721fabe6b15d0bab0&amp;=&amp;format=webp&amp;quality=lossless&amp;width=1440&amp;height=445" alt="project-screenshot" width="800" height="400/">
 
@@ -16,9 +16,9 @@
 
   
   
-<h2>💻 Built with</h2>
+<h2>💻 Construit avec :</h2>
 
-Technologies used in the project:
+Voici les technologies utilisées dans ce projet:
 
 *   HTML
 *   CSS
