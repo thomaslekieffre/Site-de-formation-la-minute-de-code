@@ -468,3 +468,127 @@ header .header-buttons a:hover {
   background: var(--beige);
   color: var(--bleu1);
 }
+
+main {
+  margin: 1rem auto;
+  width: 100%;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  place-items: center;
+  grid-gap: 1rem;
+  padding: 0 0.5rem;
+}
+
+.content-right,
+.content-left {
+  max-width: 700px;
+  width: 100%;
+  height: 100%;
+  background: var(--bleu1);
+  box-shadow: inset -3px -3px 7px #383d55, inset 3px 3px 5px #11131d;
+  padding: 1rem 2rem;
+  margin: 0 1rem;
+}
+
+.content-right h2,
+.content-left h2 {
+  padding: 1rem 0;
+  margin: 2rem 0;
+  border-bottom: 1px solid var(--bleu3);
+}
+
+.content-left ul {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.content-left ul li {
+  width: 100%;
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+  border-bottom: 0.5px solid var(--blanc);
+}
+
+.content-left .content-img {
+  display: block;
+  width: 70px;
+  height: 70px;
+  margin-right: 1rem;
+}
+
+.content-left .content-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content-left a {
+  display: inline-block;
+  width: 180px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: -3px -3px 7px #383d55, 3px 3px 5px #11131d;
+  border-radius: 10px;
+  margin-top: 3rem;
+}
+
+.content-left .content-infos {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.content-left .content-infos div {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  margin-right: 0.3rem;
+}
+.content-left .content-infos div ion-icon {
+  margin-right: 0.2rem;
+}
+
+.content-left a:hover {
+  box-shadow: inset -3px -3px 7px #383d55, inset 3px 3px 5px #11131d;
+}
+
+.content-right-cards {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 1rem;
+  place-items: center;
+  margin: 3rem 0;
+}
+
+.content-right-cards li a {
+  width: 200px;
+  height: 150px;
+  background: var(--fond2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: -3px -3px 7px #383d55, 3px 3px 5px #11131d;
+}
+
+.content-right-cards li a:hover {
+  box-shadow: inset -3px -3px 7px #383d55, inset 3px 3px 5px #11131d;
+}
+.content-right-cards li {
+  list-style: none;
+}
+.content-right-cards li ion-icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 1rem;
+}
+
+.content-right-cards li p {
+  font-size: 12px;
+  text-align: center;
+}
